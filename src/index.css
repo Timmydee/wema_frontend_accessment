@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+
+:root {
+  --color-primary: #039BF0;
+  --color-secondary: #1A1619;
+  --color-tetiary: #606060;
+  --color-background: #F5F6F8;
+  --color-border: #E0E0E0;
+  --shadow-card: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  --border-radius-md: 8px;
+}
+
+.text-primary {
+  color: var(--color-primary);
+}
+
+.text-secondary {
+  color: var(--color-secondary);
+}
+
+.text-tetiary {
+  color: var(--color-tetiary);
+}
+
+.bg-background {
+  background-color: var(--color-background);
+}
+
+.border-custom {
+  border-color: var(--color-border);
+}
+
+.shadow-card {
+  box-shadow: var(--shadow-card);
+}
+
+.rounded-md {
+  border-radius: var(--border-radius-md);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.input {
+  width: 100%;
+  min-height: 48px;
+  max-width: 100%;
+  margin: 4px 0;
+  padding: 4px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.2s ease;
+}
+
+input:focus {  
+  border-color: #007BFF;  
+  outline: none;  
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);  
+}
+
+.select {  
+  width: 100%;
+  min-height: 48px; 
+  max-width: 100%;
+  padding: 0.5rem;
+  padding: 4px; 
+  font-size: 14px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  transition: border-color 0.2s ease; 
+  outline: none; 
+}  
+
+select:focus {  
+  border-color: #007BFF; 
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);   
+} 
+
+.select-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.select-wrapper::after {
+  content: "▼";
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #666;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+.btn {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+
