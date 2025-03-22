@@ -1,5 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
 @import "tailwindcss";
-
 
 :root {
   --color-primary: #039BF0;
@@ -7,8 +7,17 @@
   --color-tetiary: #606060;
   --color-background: #F5F6F8;
   --color-border: #E0E0E0;
-  --shadow-card: 0px 4px 12px rgba(0, 0, 0, 0.1);
-  --border-radius-md: 8px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: 'Inter', sans-serif;
+}
+
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
 }
 
 .text-primary {
@@ -37,12 +46,6 @@
 
 .rounded-md {
   border-radius: var(--border-radius-md);
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
 }
 
 .input {

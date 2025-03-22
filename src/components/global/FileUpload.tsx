@@ -45,7 +45,7 @@ const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
               alt="Upload Business Logo"
               className="w-10 h-9 inline-block mr-2"
             />
-            <span className="text-[#1A141F] text-[12px] font-normal">
+            <span className="text-[#1A141F] text-[12px] font-normal font-poppins">
               Drag here or click the button below to upload
             </span>
             <div className="flex items-center space-x-2 cursor-pointer bg-[#039BF0] text-white text-sm px-4 py-2 rounded-md hover:bg-blue-700 transition">
@@ -62,7 +62,7 @@ const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
                 onChange={handleFileChange}
               />
             </div>
-            <span className="text-[#4B3A5A] text-[14px]">
+            <span className="text-[#4B3A5A] text-[14px] font-poppins">
               Maximum upload size: 10MB (.jpg)
             </span>
           </div>
